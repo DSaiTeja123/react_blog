@@ -35,6 +35,10 @@ export default function Post() {
     <div className="py-2 bg-gray-50 min-h-screen">
       <Container>
         <div className="w-full mb-10">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-extrabold text-gray-200 leading-tight">{post.title}</h1>
+          </div>
+
           <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
             <img
               src={appwriteService.getFilePreview(post.featuredImage)}

@@ -96,7 +96,11 @@ export class Service{
       return await this.bucket.createFile(
         conf.appwriteBucketId,
         ID.unique(),
-        file 
+        file,
+        [
+          'read("any")',
+          'write("any")'
+        ]
       )
     } catch (error) {
       console.log("Appwrite service :: uploadFile :: error", error);
@@ -121,7 +125,7 @@ export class Service{
     return this.bucket.getFilePreview(
       conf.appwriteBucketId,
       fileId
-    ).href; // <-- Add .href to return string URL
+    ).href;
   }  
 }
 
