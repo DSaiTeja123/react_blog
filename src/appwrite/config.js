@@ -96,10 +96,7 @@ export class Service{
       return await this.bucket.createFile(
         conf.appwriteBucketId,
         ID.unique(),
-        file,
-        [
-          'role:all'
-        ] 
+        file 
       )
     } catch (error) {
       console.log("Appwrite service :: uploadFile :: error", error);
