@@ -17,7 +17,7 @@ export default function RTE({ name = 'content', control, label, defaultValue = '
         defaultValue={defaultValue}
         render={({ field: { onChange } }) => (
           <Editor
-            // tinymceScriptSrc="/node_modules/tinymce/tinymce.min.js"
+            tinymceScriptSrc="/node_modules/tinymce/tinymce.min.js"
             initialValue={defaultValue}
             onEditorChange={onChange}
             init={{
