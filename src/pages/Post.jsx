@@ -39,7 +39,7 @@ export default function Post() {
             <h1 className="text-4xl font-extrabold text-gray-200 leading-tight">{post.title}</h1>
           </div>
 
-          <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
+          <div className="relative p-60 rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
             <img
               src={appwriteService.getFilePreview(post.featuredImage)}
               alt={post.title}
@@ -62,10 +62,6 @@ export default function Post() {
               </div>
             )}
           </div>
-        </div>
-
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">{post.title}</h1>
         </div>
 
         <div className="prose prose-lg max-w-none text-gray-800">
