@@ -31,7 +31,7 @@ function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
+    <div className="flex items-start justify-center min-h-screen bg-gray-50 mt-10">
       <div className="mx-auto w-full max-w-md bg-white rounded-lg shadow-md p-8 border border-gray-200">
         <div className="mb-6 text-center">
           <span className="inline-block w-24">
